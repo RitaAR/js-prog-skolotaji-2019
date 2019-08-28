@@ -5,23 +5,26 @@
     <meta charset="utf8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../styles.css">
-    <script type="text/javascript" >
-      var i = 0;
-    </script>
+    <!-- <script type="text/javascript" > 
+      var i = 0; -->
+    <!-- </script> -->
+    <script src="./index.js"></script> 
   </head>
   <body class="container">
     <div id="task">
       <h1>Funkcijas un to izsaukumi</h1>
       <ol>
-        <li>Izveidot funkciju kura palielina i mainīgā vērtību</li>
-        <li>Izveidot funkciju kura samazina i mainīgā vērtību, bet i var būt tikai naturāls skaitlis</li>
+        <li>Izveidot funkciju kura palielina i mainīgā vērtību par viens</li>
+        <li>Izveidot funkciju kura samazina i mainīgā vērtību par viens, bet i var būt tikai naturāls skaitlis</li>
+        <li>Samazinot mainīgā i vērtību par 1, kad tā vērtība ir 1,  i vērtība nemainās, bet lietotājam tiek izvadīts paziņojums par kļūdu un tās iemeslu.</li>
         <li>Piesaistīt šīs funkcijas pie pogām </li>
         <li>Izveidot ievada logu, kura vērtība tiktu mainīta uz i mainīgā vērtību pie pogas nospiešanas</li>
       </ol>
     </div>
     <div id="root" class="row justify-content-center">
       <button class="col-md-auto btn btn-danger" onClick="samazinat()">Samazināt</button>
-      <input class="col-md-3 form-control" type="text" id="vertiba" value="0" />
+      <input class="col-md-3 form-control" type="number" id="vertiba" value="0" min="1" />
+      <p id="vertiba" class="col-md-3"></p>
       <button class="col-md-auto btn btn-success" onClick="palielinat()">Palielināt</button>
     </div>
     <div id="info">
@@ -32,7 +35,10 @@
         <li><a href="https://www.w3schools.com/js/js_functions.asp" target="_new">Funkcijas</a></li>
         <li><a href="https://www.w3schools.com/jsref/prop_text_value.asp" target="_new">Ievada vērtības maiņa ar javascript</a></li>
       </ul>
-    </div>
+    </div>   
+
+
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
